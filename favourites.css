@@ -1,0 +1,124 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(red, blue);
+}
+
+.heading{
+    text-align: center;
+    color: darkblue;
+}
+
+/* styling home tab */
+.homeTab{
+    margin: 10px;
+    width: 60px;
+    height: 35px;
+    background-color: blueviolet;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.homeTab>a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+#favouritesPage{
+    height: 100vh;
+    width: 100vw; 
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+/* left scroll div favorite superhero */
+
+.favouritesHeroes{
+    height: 100%;
+    width: 25%;
+    overflow-y: scroll;
+    border: 3px solid red;
+    
+}
+
+.box1{
+    height: 180px;
+    width: 180px;
+    border: 2px solid blue;
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    gap: 10px;
+    border-radius: 50%;
+    margin: 5px;
+}
+.search-img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+.superhero-image{
+    height: 40vh;
+    width: 40vh;
+    border-radius: 50%;
+}
+
+.images{
+    height: 30vh;
+    width: 30vh;
+    border-radius: 50%;
+}
+
+/* superhero description superhero */
+
+.descriptionBox{
+    width: 70%;
+    padding: 10px;
+    display: flex;
+    border: 3px solid red;
+}
+
+.desc-box{
+    width: 100%;
+    color: black;
+    font-size: 1.5rem;
+    background-color: white;
+    padding: 10px 30px;
+}
+
+.characteristics{
+    background-color: purple;
+    padding-left: 20px;
+}
+.characteristics>button{
+    text-decoration: none;
+    background-color: inherit;
+    border: none;
+    margin-right: 25px;
+    cursor: pointer;
+}
+.Appearance{
+    display: inherit;
+}
+.Powerstats{
+    display: none;
+}
+.Connections{
+    display: none;
+}
+.Biography{
+    display: none;
+}
+
+.desc-box span{
+    color: rebeccapurple;
+    margin-left: 20px;
+}

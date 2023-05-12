@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="main-wrapper background-superhero">
+
+      <div class="app">
+
+        <div class="favoritesTab"><a href="favourites.html"> Favourites <i class="fa-sharp fa-regular fa-heart"></i> </a></div>
+     <!-- Main Heading  -->
+       <header class="app-header">   
+        <h1 id="heading-1">Super <span class="inside-h1">Hero</span> </h1>
+     </header>
+     <!-- Input and Displaying Part -->
+      <div id="container">
+
+        <div id="search-area">
+
+         <input placeholder="search your superhero..." id="search-box" type="search" >
+         <!-- <button id="search-button" type="submit"> </button>    -->
+
+        <div class="search-box2">
+
+        </div>
+        
+        </div>
+
+     
+
+      <div class="display">
+        <div class="superhero-image">
+           <img class="images" src="./images/batman.png" />
+           <button class="favourites">Add Favourites <i class="fa-sharp fa-regular fa-heart"></i> </button>
+        </div>
+        <div>
+          <h1 class="name">Name</h1>
+          <div class="characteristics">
+
+            <button class="appearance-button" onclick="appearance()"><h2>Appearance</h2></button>
+            <button class="powerstats-button" onclick="powerstats()"><h2>Powerstats</h2></button>
+            <button class="biography-button" onclick="biography()"><h2>Biography</h2></button>
+            <button class="connections-button" onclick="connections()"><h2>Connections</h2></button>
+
+          </div>
+        
+          <div class="desc-box">
+            <div class="Appearance">
+              <p>gender : <span class="a1"></span> </p>
+              <p>eye-color : <span class="a2"></span> </p>
+              <p>height : <span class="a3"></span> </p>
+              <p>weight : <span class="a4"></span> </p>
+              <p>race : <span class="a5"></span> </p>
+            </div>
+
+            <div class="Biography">
+              <p>alter-egos : <span class="b1"></span> </p>
+              <p>first-appearance : <span class="b2"></span> </p>
+              <p>full-name : <span class="b3"></span> </p>
+              <p>place-of-birth : <span class="b4"></span> </p>
+              <p>publisher : <span class="b5"></span> </p>
+            </div>
+
+            <div class="Powerstats">
+              <p>combat : <span class="p1"></span> </p>
+              <p>durability : <span class="p2"></span> </p>
+              <p>intelligence : <span class="p3"></span> </p>
+              <p>power : <span class="p4"></span> </p>
+              <p>speed : <span class="p5"></span> </p>
+              <p>strength : <span class="p6"></span> </p>
+            </div>
+          
+            <div class="Connections">
+              <p>group-affiliation : <span class="c1"></span> </p>
+              <p>relatives : <span class="c2"></span> </p>
+            </div>
+         
+      </div>
+     
+    </div>
+    </div>
+</body>
+</html>
+<script src="scripts.js" ></script>
+
+
+
+
+
+
+ 

@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root{
+    --poppins-font:'Poppins', sans-serif;
+    --dark-color:black;
+    --red-color:red;
+    --light-color:white;
+    --grey-color:grey;
+    --yellow-color:yellow;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background: var(--red-color);
+    background: linear-gradient(169deg, red 0%, purple 100%);
+    line-height: 1.6;
+    font-family: var(--poppins-font);
+    display: flex;
+    align-items:center;
+    justify-content: stretch;
+    
+}
+
+
+/* Styling main div */
+
+.background-superhero{
+    background-image: url('./images/batman.png'), 
+    url('./images/captain.png'),
+    url('./images/hulk.png'),
+    url('./images/spider.png'),
+    url('./images/wonder.png'),
+    url('./images/saitama.png');
+    background-position: right bottom, left top, right center,
+     right top, left center, left bottom ;
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+}
+
+.main-wrapper{
+    min-height: 100vh;
+    width: 100vw;
+    border: 3px solid blueviolet;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.app{
+    background-color: var(--dark-color);
+}
+
+#heading-1{
+    color: darkblue;
+    text-align: center;
+    margin-top: -10px;
+}
+.inside-h1{
+    color: saddlebrown;
+}
+#container{
+    min-height: 80vh;
+    width: 80vw;
+    background-color: var(--dark-color);
+    position: relative;
+}
+
+/* styling input element */
+
+#search-area{
+   display: flex;
+   flex-direction: column;
+   align-items: center; 
+}
+#search-box{
+    height: 50px;
+    width: 400px;
+    border: 4px solid teal;
+    border-radius: 5px;
+    vertical-align: middle;
+}
+
+.search-box2{
+    min-height: 0px ;
+    width: 400px;
+    color: red;
+    background-color: white;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.box1{
+    height: 50px;
+    width: 100%;
+    border: 1px solid blue;
+}
+.search-img{
+    height: 50px;
+    width: 50px;
+}
+
+
+
+/* Styling display area */
+
+.display{
+    background-color: var(--dark-color);
+    min-height: 400px;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+   display: flex;
+   padding: 20px;
+   justify-content: space-around;
+}
+
+.superhero-image{
+    height: 40vh;
+    width: 40vh;
+    background-color: var(--light-color);
+    border-radius: 50%;
+}
+
+.images{
+    height: 40vh;
+    width: 40vh;
+    border-radius: 50%;
+}
+
+/* styling favourite button */
+.favourites{
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: red;
+    margin: 10px;
+}
+
+.favourites:hover {
+    background-color: green;
+    cursor: pointer;
+}
+
+.favoritesTab{
+    margin: 10px;
+    width: 120px;
+    height: 35px;
+    background-color: crimson;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.favoritesTab>a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.display>div:nth-child(2){
+    width: 70%;
+}
+
+.desc-box{
+    width: 100%;
+    color: black;
+    font-size: 1.5rem;
+    background-color: var(--light-color);
+    padding: 10px 30px;
+}
+
+.characteristics{
+    background-color: purple;
+    padding-left: 20px;
+}
+.characteristics>button{
+    text-decoration: none;
+    background-color: inherit;
+    border: none;
+    margin-right: 25px;
+    cursor: pointer;
+}
+.Appearance{
+    display: inherit;
+}
+.Powerstats{
+    display: none;
+}
+.Connections{
+    display: none;
+}
+.Biography{
+    display: none;
+}
+
+.desc-box span{
+    color: rebeccapurple;
+    margin-left: 20px;
+}
+
+@media all and (max-width: 600px) {
+   .display{
+    flex-direction: column;
+    height: 150vh;
+   }
+  }
